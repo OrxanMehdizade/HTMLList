@@ -1,25 +1,40 @@
 
 .list-Div {
     text-align: center;
-    background: indianred;
+    width: 950px;
+    height: 720px;
+    background-color:pink;
+    position: relative;
+    margin-top: 180px;
+    margin-left: 280px;
+    padding: 10px;
+
+}
+p{
+    background-color: #9f354b;
 }
 
 .list-Ol {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding: 0;
+    font-size: 50px;
+    position:absolute;
+    margin-left: 100px;
 }
-.list-item {
-    border: 1px solid black;
-    background-color: white;
-    padding: 10px;
-    display: flex;
-    color: #333;
+.list-Ol li {
+    position: relative;
+    color: whitesmoke;
+    z-index: 1;
+    background-color: #9f354b;
+
 }
 
-.list-item:nth-child(odd) {
-    background-color: #e0e0e0;
-}
+.list-Ol li::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    width: 900px;
+    height: 100%;
+    background-color: #c66377;
+    z-index: -1;
 
-/*rgb(255, 149, 163)*/
+}
